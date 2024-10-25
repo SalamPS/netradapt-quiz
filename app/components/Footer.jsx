@@ -20,7 +20,7 @@ export default function Footer ({children, title}) {
         </Link>
         <Link className="block mb-6" href="https://wa.me/081366776988/">
           <i className="bi bi-telephone-fill mr-2"/> 
-          <span>081366776988</span>
+          <span>{'(+62)'}-813-6677-6988</span>
         </Link>
         <Link className="block mb-6" href="https://instagram.com/netradapt/">
           <i className="bi bi-instagram mr-2"/> 
