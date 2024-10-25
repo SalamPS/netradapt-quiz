@@ -49,7 +49,7 @@ export default function KuisMulai ({params}) {
   }
 
   return (<>
-    <Navbar active={'kuis'} text={`Report Kuis ${kuisData.title ? '- ' + kuisData.title : ''}`}/>
+    <Navbar active={'kuis'} title={`Report Kuis ${kuisData.title ? '- ' + kuisData.title : ''}`}/>
     <main>
       <div className="playContainer">
         {kuisData.plays?.map((play,i) => {

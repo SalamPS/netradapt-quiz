@@ -1,17 +1,19 @@
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 
-export default function Navbar ({active, text, actions}) {
+export default function Navbar ({children, title, big, dark, actions}) {
   const router = useRouter()
-  if (active == 'kuis') return (
-    <nav className='quizNavbar' id={text == 'Profil' ? 'profile' : ''}>
-      <div className="left">
+  if (!big) return (
+    <nav className={`py-5 px-36 flex flex-row justify-between border-b-4 border-[#5abe22] ${dark ? 'bg-[#00312d] text-white' : 'bg-white text-black'}`}>
+      <div className="flex flex-row items-center">
         <div onClick={() => {router.back()}}>
-          <i className="bi bi-arrow-left"></i>
+          <i className="bi bi-arrow-left mr-12 cursor-pointer"/>
         </div>
-        <span>{text}</span>
+        <span>
+          <b>{title}</b>
+        </span>
       </div>
-      <div className="right">
+      <div className="flex flex-row items-center">
         {!actions ? '' : actions.map((item,i) => (
           <div className={`action ${item.type}`} key={i} onClick={item.action}>
             {item.text}
@@ -21,16 +23,20 @@ export default function Navbar ({active, text, actions}) {
     </nav>
   )
   else return (
-    <nav className='solid-white'>
-      <div className="left">
-        <h1 className="title">AudioVista</h1>
-        
-        <Link href={'kuis/new'} className={`menu${active == 'new' ? ' active' : ''}`}>Buat Kuis</Link>
-        <Link href={'kuis'} className={`menu${active == 'res' ? ' active' : ''}`}>Daftar Kuis</Link>
+    <nav className="py-5 px-36 flex flex-row justify-between border-b-4 border-[#5abe22] bg-white">
+      <div className="left flex flex-row items-center">
+        <h1 className="title text-2xl">
+          <b>
+            <Link href={"/"}>Netradapt</Link> 
+            {" | "} 
+            {title}
+          </b>
+        </h1>
+        {children}
       </div>
-      <div className="right">
-        <Link href={'profile'} className="act profile">
-          <i className="bi bi-person profile-icon"></i>
+      <div className="right flex flex-row items-center">
+        <Link href={'profile'} className="act flex justify-center items-center text-white rounded-full w-[72px] h-[72px] bg-[#00312d]">
+          <i className="bi bi-person-fill text-2xl"></i>
         </Link>
       </div>
     </nav>

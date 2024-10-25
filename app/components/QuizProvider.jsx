@@ -124,7 +124,7 @@ export default function QuizProvider ({kuisId}) {
   return (
   <QuizContext.Provider
     value={{kuisData, setKuisData, editable, setEditable, setDeleted}}>
-    <Navbar active={'kuis'} text={kuisId ? 'Edit Kuis' : 'Buat Kuis'} actions={navbarActions}/>
+    <Navbar active={'kuis'} title={kuisId ? 'Edit Kuis' : 'Buat Kuis'} actions={navbarActions}/>
     <main>
       <form>
         <div id="head" className="container">

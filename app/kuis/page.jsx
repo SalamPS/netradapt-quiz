@@ -34,7 +34,7 @@ export default function Kuis ({params}) {
   }, [])
 
   return (<>
-    <Navbar active={'kuis'} text={'Daftar Kuis'}/>
+    <Navbar active={'kuis'} title={'Daftar Kuis'}/>
 
     <main>
       <Link id="create" href={'kuis/new'}>

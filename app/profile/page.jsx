@@ -70,7 +70,7 @@ export default function Profile({ params }) {
 
   return (
     <>
-      <Navbar active={'kuis'} text={'Profil'} />
+      <Navbar dark title={"Profile"}/>
       <main id='profile' className="profile-main">
         <div className="profile-container">
           <div className="profile-picture">

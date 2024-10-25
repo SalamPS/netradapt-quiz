@@ -9,6 +9,7 @@ import Navbar from "../components/Navbar";
 import "@/app/css/dashboard.css"
 import QuizList from "../components/QuizList";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Info = () => {
   return (<div className="info">
@@ -24,6 +25,7 @@ const Info = () => {
 export default function Dashboard () {
   const [query, setQuery] = useState({list: [], play: []})
   const [isLoading, setIsLoading] = useState(true);
+  const router = useRouter()
 
   useEffect(() => {
     const data = JSON.parse(localStorage.getItem('logged'))
@@ -46,7 +48,10 @@ export default function Dashboard () {
   }, [])
 
   return (<>
-    <Navbar/>
+    <Navbar title="Quiz" big>
+      <Link href={'kuis/new'} className={`menu ml-10 text-[#668381]`}>Buat Kuis</Link>
+      <Link href={'kuis'} className={`menu ml-10 text-[#668381]`}>Daftar Kuis</Link>
+    </Navbar>
 
     <div id="dashboard" className="container solid-light">
       <Info/>
