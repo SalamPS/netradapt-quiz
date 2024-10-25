@@ -59,7 +59,9 @@ export default function Dashboard () {
       </div>}
     </div>
 
-    <Footer/>
+    <Footer>
+      <b>Quiz. </b>Alat kuis interaktif yang dirancang untuk siswa tunanetra. Dengan fitur text-to-speech dan tombol respon yang intuitif, alat ini memungkinkan siswa untuk mendengarkan soal dan menjawab dengan mudah.
+    </Footer>
     <LoadingOverlay isLoading={isLoading} />
   </>)
 }
