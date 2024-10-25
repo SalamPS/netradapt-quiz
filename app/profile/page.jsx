@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import Navbar from "../components/Navbar";
-import '@/app/css/profile.css';
 import LoadingOverlay from "../components/loadingOverlay";
 
 export default function Profile({ params }) {
