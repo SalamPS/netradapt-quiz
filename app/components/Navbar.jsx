@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 
@@ -23,15 +24,14 @@ export default function Navbar ({children, title, big, dark, actions}) {
     </nav>
   )
   else return (
-    <nav className="py-5 px-36 flex flex-row justify-between border-b-4 border-[#5abe22] bg-white">
+    <nav className="py-5 px-36 flex flex-row justify-between items-center border-b-4 border-[#5abe22] bg-white">
       <div className="left flex flex-row items-center">
-        <h1 className="title text-2xl">
-          <b>
-            <Link href={"/"}>Netradapt</Link> 
-            {" | "} 
-            {title}
-          </b>
-        </h1>
+        <Link href={"/"} className='flex items-center'>
+          <img className='inline' src={title+".png"} width={50} alt={title} />
+          <span className='ml-3 text-xl text-[#008b47]'>
+            <b>Quizsense</b>
+          </span>
+        </Link> 
         {children}
       </div>
       <div className="right flex flex-row items-center">

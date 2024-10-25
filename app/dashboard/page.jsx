@@ -49,9 +49,9 @@ export default function Dashboard () {
   }, [])
 
   return (<>
-    <Navbar title="Quiz" big>
-      <Link href={'kuis/new'} className={`menu ml-10 text-[#668381]`}>Buat Kuis</Link>
-      <Link href={'kuis'} className={`menu ml-10 text-[#668381]`}>Daftar Kuis</Link>
+    <Navbar title="quizsense" big>
+      <Link href={'kuis/new'} className={`menu ml-10 mt-[3px] text-[#668381]`}>Buat Kuis</Link>
+      <Link href={'kuis'} className={`menu ml-10 mt-[3px] text-[#668381]`}>Daftar Kuis</Link>
     </Navbar>
 
     <div id="dashboard" className="px-[96px] py-[48px]">
@@ -65,8 +65,8 @@ export default function Dashboard () {
       </div>}
     </div>
 
-    <Footer>
-      <b>Quiz. </b>Alat kuis interaktif yang dirancang untuk siswa tunanetra. Dengan fitur text-to-speech dan tombol respon yang intuitif, alat ini memungkinkan siswa untuk mendengarkan soal dan menjawab dengan mudah.
+    <Footer title={"Quizsense"}>
+      <b>Quizsense. </b>Alat kuis interaktif yang dirancang untuk siswa tunanetra. Dengan fitur text-to-speech dan tombol respon yang intuitif, alat ini memungkinkan siswa untuk mendengarkan soal dan menjawab dengan mudah.
     </Footer>
     <LoadingOverlay isLoading={isLoading} />
   </>)
