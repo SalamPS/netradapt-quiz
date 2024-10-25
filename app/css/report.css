@@ -1,0 +1,84 @@
+.playContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px 40px;
+  grid-template-areas: ". . .";
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 42px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.answers {
+  margin-top: 20px;
+}
+
+.answer {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #ddd;
+}
+
+.answer.FALSE {
+  background-color: rgb(255, 134, 134);
+  color: black;
+}
+
+.answer.TRUE {
+  background-color: rgb(205, 255, 190);
+  color: black;
+}
+
+.list {
+  margin-top: 12px;
+}
+
+.list span {
+  display: block;
+  margin-left: 12px;
+}
+
+.list span.head {
+  font-size: 14px;
+  color: #999;
+}
+
+.close {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  float: right;
+  cursor: pointer;
+}
+
+.plays {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 14px;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.plays:hover {
+  scale: 1.05;
+}/*# sourceMappingURL=report.css.map */

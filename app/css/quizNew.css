@@ -1,0 +1,161 @@
+#head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 24px;
+  margin-bottom: 32px;
+}
+#head .title {
+  flex-grow: 1;
+}
+#head .class {
+  display: flex;
+  justify-content: flex-end;
+}
+#head .edit {
+  margin-left: 20px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+  outline: none;
+  border: none;
+  font-family: inherit;
+  color: white;
+  background-color: #a2aaa1;
+}
+#head .edit:hover {
+  background-color: #657064;
+}
+#head input {
+  width: 90%;
+  outline: none;
+  display: block;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-family: inherit;
+  border: solid 2px #c4c4c4;
+  transition: 0.2s;
+}
+#head input:focus {
+  border-color: #848484;
+}
+#head input:-moz-placeholder-shown {
+  font-family: inherit;
+}
+#head input:placeholder-shown {
+  font-family: inherit;
+}
+
+.container {
+  padding: 24px 32px;
+  border-radius: 32px;
+  background-color: #FFF;
+}
+
+#body .container {
+  margin-bottom: 12px;
+}
+
+.question .top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+.question .edit {
+  background-color: #f4f4f4;
+  border-radius: 18px;
+  padding: 12px 24px;
+}
+.question .bi {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+.question .delete {
+  transition: 0.3s;
+  color: #f44027;
+}
+.question .block {
+  width: 90%;
+}
+.question .action {
+  display: flex;
+  justify-content: flex-end;
+}
+.question .mid {
+  padding: 48px 96px;
+  overflow: visible;
+  text-overflow: clip;
+}
+.question .bot {
+  display: flex;
+  justify-content: space-between;
+}
+.question .answer {
+  text-align: center;
+  display: block;
+  flex-grow: 1;
+  padding: 32px 0;
+  border-radius: 18px;
+}
+.question .answer input {
+  color: white;
+}
+.question .left {
+  background-color: #457b9d;
+}
+.question .LEFT {
+  margin-right: 20px;
+}
+.question .RIGHT {
+  margin-left: 20px;
+}
+.question .right {
+  background-color: #e63946;
+}
+.question input, .question textarea {
+  resize: none;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 0.9rem;
+  background-color: transparent;
+}
+
+.newQuest {
+  text-align: center;
+  padding: 24px 32px;
+  border-radius: 32px;
+  margin-top: 24px;
+  cursor: pointer;
+  transition: 0.2s;
+  color: white;
+  background-color: #5abe22;
+}
+.newQuest:hover {
+  background-color: #63c929;
+}/*# sourceMappingURL=quizNew.css.map */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-inner {
+  background: white;
+  padding: 32px;
+  border-radius: 10px;
+  text-align: center;
+}

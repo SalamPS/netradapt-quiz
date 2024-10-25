@@ -1,0 +1,23 @@
+{
+  "name": "proyek_konsultasi",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "zip": "powershell -Command \"Get-ChildItem -Path './' -Recurse -File | Where-Object { $_.FullName -notmatch '\\.git' -and $_.FullName -notmatch '\\node_modules' -and $_.FullName -notmatch '\\.env.local' } | Compress-Archive -DestinationPath './upload.zip'\""
+  },
+  "dependencies": {
+    "js-cookie": "^3.0.5",
+    "mysql": "^2.18.1",
+    "next": "14.1.3",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.1.3"
+  }
+}

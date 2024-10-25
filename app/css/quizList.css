@@ -1,0 +1,39 @@
+.quizList {
+  margin: 64px 0;
+}
+.quizList .row {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  padding: 32px 48px;
+  border-radius: 32px;
+  margin-bottom: 32px;
+}
+.quizList .props {
+  margin-bottom: 14px;
+}
+.quizList .bi {
+  margin-right: 5px;
+  display: inline-block;
+}
+.quizList .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.quizList .view {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 32px;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.3s;
+  background-color: #f4f4f4;
+}
+.quizList .view:hover {
+  background-color: #5abe22;
+  color: white;
+}/*# sourceMappingURL=quizList.css.map */

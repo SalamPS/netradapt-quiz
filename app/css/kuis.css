@@ -1,0 +1,20 @@
+main {
+  padding: 20px 180px;
+}
+
+#create {
+  display: block;
+  background-color: white;
+  border-radius: 24px;
+  padding: 32px 48px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#create:hover {
+  background-color: #5abe22;
+  color: white;
+}
+#create .bi {
+  font-size: 1.4rem;
+}/*# sourceMappingURL=kuis.css.map */

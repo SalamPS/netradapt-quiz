@@ -1,0 +1,16 @@
+.question .answer {
+  position: relative;
+}
+
+.question .answer input[type="checkbox"] {
+  position: absolute;
+  top: 15px;
+}
+
+.question .left {
+  background-color: #457b9d;
+}
+
+.question .right {
+  background-color: #e63946;
+}/*# sourceMappingURL=quizQuest.css.map */
